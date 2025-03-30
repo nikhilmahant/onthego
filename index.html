@@ -8,67 +8,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <span><i class="fas fa-phone-alt"></i> +91 9876543210</span>
-                <span><i class="fas fa-envelope"></i> dr.sudheendra@example.com</span>
-            </div>
-            <div class="social-links">
-                <a href="https://facebook.com/drsudheendra" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/drsudheendra" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/in/drsudheendra" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Dr. Sudheendra Huddar" width="50" height="50">
-                <div class="logo-text">
-                    <h1>Dr. Sudheendra Huddar</h1>
-                    <p>MD Psychiatry, DM in Addiction Psychiatry</p>
-                </div>
-            </div>
-            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#appointment">Appointments</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- Mobile-only contact info -->
-                <li class="mobile-contact-info">
-                    <div class="mobile-contact-items">
-                        <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> Call Us</a>
-                        <a href="mailto:dr.sudheendra@example.com"><i class="fas fa-envelope"></i> Email Us</a>
-                        <div class="mobile-social-links">
-                            <a href="https://facebook.com/drsudheendra" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/drsudheendra" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://linkedin.com/in/drsudheendra" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">
+                    <img src="assets/images/logo.png" alt="Dr. Sudheendra Huddar" width="40" height="40">
+                    <div class="logo-text">
+                        <h1>Dr. Sudheendra Huddar</h1>
+                        <p>MD Psychiatry, DM in Addiction Psychiatry</p>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#appointment" class="nav-link">Appointments</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="mobile-contact-info">
+                        <div class="mobile-contact-items">
+                            <a href="tel:+919876543210" class="mobile-contact-link">
+                                <i class="fas fa-phone-alt"></i> Call Us
+                            </a>
+                            <a href="mailto:dr.sudheendra@example.com" class="mobile-contact-link">
+                                <i class="fas fa-envelope"></i> Email Us
+                            </a>
+                            <div class="mobile-social-links">
+                                <a href="https://facebook.com/drsudheendra" aria-label="Facebook" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/drsudheendra" aria-label="Twitter" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/drsudheendra" aria-label="LinkedIn" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2>Expert Psychiatric Care in Hubli</h2>
+                   <!-- <h2>Expert Psychiatric Care in Hubli</h2> -->
                     <h1>Dr. Sudheendra Huddar</h1>
                     <p>Specialized in Addiction Psychiatry and Mental Health Disorders with 7+ years of clinical experience</p>
                     <div class="hero-buttons">
@@ -79,8 +75,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <!--<img src="assets/images/clinic.jpg" alt="Clinic Interior"
-                    
+                    <img src="assets/images/clinic.jpg" alt="Clinic Interior" loading="lazy">
                 </div>
             </div>
         </div>
@@ -91,7 +86,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>About Dr. Sudheendra</h2>
-                <div class="divider"></div>
+                <p>Dedicated to providing compassionate and expert psychiatric care</p>
             </div>
             <div class="about-content">
                 <div class="about-image">
@@ -120,7 +115,6 @@
         <div class="container">
             <div class="section-header">
                 <h2>Specialized Services</h2>
-                <div class="divider"></div>
                 <p>Comprehensive psychiatric care for various mental health conditions</p>
             </div>
 
@@ -181,19 +175,15 @@
         <div class="container">
             <div class="section-header">
                 <h2>Book an Appointment</h2>
-                <div class="divider"></div>
+                <p>Schedule your consultation with our expert psychiatrist</p>
+            </div>
 
-                <!-- Google Appointment Schedule -->
-                <div class="card">
-                    <p>📅 Schedule your consultation using the calendar below:</p>
-                    <div class="appointment-container">
-                        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vFZe-rg2lhMgAM53k7L0CLX8A_KroKox8OrTXROkXWy4SAXiIH4a9DvDohmfJuAVHQx-3e--D?gv=true"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+            <div class="card">
+                <div class="appointment-container">
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vFZe-rg2lhMgAM53k7L0CLX8A_KroKox8OrTXROkXWy4SAXiIH4a9DvDohmfJuAVHQx-3e--D?gv=true" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </div>
 
-        <div class="appointment-container">
             <div class="appointment-info">
                 <h3>Clinic Hours</h3>
                 <ul class="timings-list">
@@ -213,35 +203,22 @@
             </div>
 
             <div class="contact-methods">
-                <a href="tel:+919876543210" class="contact-btn">
+                <a href="tel:+919876543210" class="btn primary-btn">
                     <i class="fas fa-phone-alt"></i> Call Now
                 </a>
-                <a href="https://wa.me/919876543210" class="contact-btn whatsapp-btn">
+                <a href="https://wa.me/919876543210" class="btn secondary-btn whatsapp-btn">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
             </div>
         </div>
     </section>
-    <!-- <div class="appointment-form">
-    <h3>Request Appointment</h3>
-    <!-- Google Appointment Schedule -->
-    <!--<div class="card">
-            <p>📅 Schedule your consultation using the calendar below:</p>
-            <div class="appointment-container">
-                <!-- <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vFZe-rg2lhMgAM53k7L0CLX8A_KroKox8OrTXROkXWy4SAXiIH4a9DvDohmfJuAVHQx-3e--D?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-            </div>
 
-        </div>
-         </div>
-    </section>
-
-    <!-- Google Map for Clinic Location -->
     <!-- Location Section -->
     <section id="location" class="location-section">
         <div class="container">
             <div class="section-header">
                 <h2>Our Location</h2>
-                <div class="divider"></div>
+                <p>Visit us at our clinic in Hubli</p>
             </div>
 
             <div class="location-container">
@@ -249,173 +226,33 @@
                     <h3>Clinic Address</h3>
                     <address>
                         <p><i class="fas fa-map-marker-alt"></i> Gandharva Hall, Shop no 17 & 18,</p>
-                        <p> Ground Floor, Ramdhoot Apartment Complex, opposite Sawai,</p>
-                        <p> beside Hero Showroom, Deshpande Nagar, Hubballi, Karnataka 580029</p>
+                        <p>Ground Floor, Ramdhoot Apartment Complex, opposite Sawai,</p>
+                        <p>beside Hero Showroom, Deshpande Nagar, Hubballi, Karnataka 580029</p>
                     </address>
 
                     <h3>Contact Information</h3>
                     <p><i class="fas fa-phone-alt"></i> +91 9876543210</p>
                     <p><i class="fas fa-envelope"></i> dr.sudheendra@example.com</p>
 
-                    <a href="https://goo.gl/maps/example" class="direction-btn" target="_blank" rel="noopener">
+                    <a href="https://goo.gl/maps/example" class="btn primary-btn" target="_blank" rel="noopener">
                         <i class="fas fa-directions"></i> Get Directions
                     </a>
                 </div>
 
                 <div class="location-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.321259912045!2d75.13579399999999!3d15.359077999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d78972db965b%3A0xeb6444694aed8c6e!2sSUKHIBHAVA%20HEALTHCARE!5e0!3m2!1sen!2sin!4v1743147100036!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-                   
-
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Patient Testimonials</h2>
-                <div class="divider"></div>
-                <p>What our patients say about their experience</p>
-            </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Dr. Sudheendra's approach to treatment changed my life. His expertise in addiction psychiatry helped me overcome my alcohol dependency."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <h4>Rahul Sharma</h4>
-                        <span>Patient since 2020</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The most empathetic psychiatrist I've consulted. He takes time to understand all aspects before recommending treatment."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <h4>Priya Nair</h4>
-                        <span>Patient since 2021</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"After struggling with depression for years, Dr. Sudheendra's comprehensive treatment plan finally gave me relief."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <h4>Anil Kumar</h4>
-                        <span>Patient since 2019</span>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Sudheendra Huddar. All Rights Reserved.</p>
             </div>
         </div>
-    </section> -->
-                    <!-- Contact Section -->
-                    <!--<section id="contact" class="contact-section">
-                        <div class="container">
-                            <div class="section-header">
-                                <h2>Contact Us</h2>
-                                <div class="divider"></div>
-                                <p>Get in touch for any inquiries or emergency appointments</p>
-                            </div>
+    </footer>
 
-                            <div class="contact-container">
-                                <div class="contact-info">
-                                    <div class="contact-item">
-                                        <i class="fas fa-phone-alt"></i>
-                                        <h3>Phone</h3>
-                                        <p>+91 9876543210</p>
-                                        <p>+91 8010203040 (Emergency)</p>
-                                    </div>
-
-                                    <div class="contact-item">
-                                        <i class="fas fa-envelope"></i>
-                                        <h3>Email</h3>
-                                        <p>dr.sudheendra@example.com</p>
-                                        <p>appointments@example.com</p>
-                                    </div>
-
-                                    <div class="contact-item">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <h3>Address</h3>
-                                        <p>Gandharva Hall, Shop no 17 & 18, Ground Floor,</p>
-                                        <p> Ramdhoot Apartment Complex, opposite Sawai, beside Hero Showroom, Deshpande Nagar, Hubballi, Karnataka 580029</p>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="contact-phone" name="phone" placeholder="Phone Number" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="contact-message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-                             <!--   <footer class="footer">
-                                    <div class="container">
-                                        <div class="footer-grid">
-                                            <div class="footer-col about-col">
-                                                <div class="footer-logo">
-                                                    <img src="assets/images/logo.png" alt="Dr. Sudheendra Huddar" width="50" height="50">
-                                                    <h3>Dr. Sudheendra Huddar</h3>
-                                                </div>
-                                                <p>Specialized psychiatric care with expertise in addiction medicine and mental health disorders.</p>
-                                                <div class="footer-social">
-                                                    <a href="https://facebook.com/drsudheendra" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="https://twitter.com/drsudheendra" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                                    <a href="https://linkedin.com/in/drsudheendra" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                                    <a href="https://instagram.com/drsudheendra" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="footer-col contact-col">
-                                                <h3>Contact Info</h3>
-                                                <ul>
-                                                    <li><i class="fas fa-map-marker-alt"></i> Gandharva Hall, Shop no 17 & 18, Ground Floor, Ramdhoot Apartment Complex, opposite Sawai, beside Hero Showroom, Deshpande Nagar, Hubballi, Karnataka 580029</li>
-                                                    <li><i class="fas fa-phone-alt"></i> +91 9876543210</li>
-                                                    <li><i class="fas fa-envelope"></i> dr.sudheendra@example.com</li>
-                                                </ul>
-                                            </div>
-                                        </div> -->
-
-                                        <div class="footer-bottom">
-                                            <p>&copy; 2025 Dr. Sudheendra Huddar. All Rights Reserved.</p>
-                                            <div class="footer-links">
-                                                <!--<a href="#">Privacy Policy</a>
-                                                <a href="#">Ter
-                                                    style="border: 0" width="100%" height="600" frameborder="0"> ms of Service</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </footer>
-
-                                <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</html>
-
-<!-- width="100%"
-         height="400"
-         style="border:0;"
-         allowfullscreen=""
-         loading="lazy"
-         title="Clinic Location Map">
-    -->
+</html> 
