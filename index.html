@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sudheendra Huddar | Psychiatry Specialist | Hubli</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .hero {
+            background: url('assets/images/clinic.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .service-card i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .appointment-section iframe {
+            border: 0;
+        }
+
+        .location-map iframe {
+            border: 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            background: #f8f9fa;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="site-header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="/" class="logo">
-                    <img src="assets/images/logo.png" alt="Dr. Sudheendra Huddar" width="40" height="40">
-                    <div class="logo-text">
-                        <h1>Dr. Sudheendra Huddar</h1>
-                        <p>MD Psychiatry, DM in Addiction Psychiatry</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img src="assets/images/logo.png" alt="Dr. Sudheendra Huddar">
+                    <div class="ms-2">
+                        <span>Dr. Sudheendra Huddar</span>
+                        <p class="m-0">MD Psychiatry, DM in Addiction Psychiatry</p>
                     </div>
                 </a>
-                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#appointment" class="nav-link">Appointments</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li class="mobile-contact-info">
-                        <div class="mobile-contact-items">
-                            <a href="tel:+918460268091" class="mobile-contact-link">
-                                <i class="fas fa-phone-alt"></i> Call Us
-                            </a>
-                            <a href="mailto:dr.sudheendra@example.com" class="mobile-contact-link">
-                                <i class="fas fa-envelope"></i> Email Us
-                            </a>
-                            <div class="mobile-social-links">
-                                <a href="https://facebook.com/drsudheendra" aria-label="Facebook" class="social-link">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://twitter.com/drsudheendra" aria-label="Twitter" class="social-link">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="https://linkedin.com/in/drsudheendra" aria-label="LinkedIn" class="social-link">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#appointment">Appointments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                  <!--  <h2>Expert Psychiatric Care in Hubli</h2>-->
-                    <h1>Dr. Sudheendra Huddar</h1>
-                    <p>Specialized in Addiction Psychiatry and Mental Health Disorders with 7+ years of clinical experience</p>
-                    <div class="hero-buttons">
-                        <a href="#appointment" class="btn primary-btn">Book Appointment</a>
-                        <a href="tel:+918460268091" class="btn secondary-btn">
-                            <i class="fas fa-phone-alt"></i> Call Now
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="assets/images/clinic.jpg" alt="Clinic Interior" loading="lazy">
-                </div>
+    <section id="home" class="hero d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <h1>Dr. Sudheendra Huddar</h1>
+            <p>Specialized in Addiction Psychiatry and Mental Health Disorders with 7+ years of clinical experience</p>
+            <div class="d-flex justify-content-center">
+                <a href="#appointment" class="btn btn-primary me-2">Book Appointment</a>
+                <a href="tel:+918460268091" class="btn btn-secondary">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section py-5">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header text-center">
                 <h2>About Dr. Sudheendra</h2>
                 <p>Dedicated to providing compassionate and expert psychiatric care</p>
             </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/images/doctor.jpg" alt="Dr. Sudheendra Huddar" loading="lazy">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/doctor.jpg" alt="Dr. Sudheendra Huddar" class="img-fluid rounded">
                 </div>
-                <div class="about-text">
+                <div class="col-md-6">
                     <p>Dr. Sudheendra completed his MBBS from BIMS, Belgaum and then pursued his post-graduation in Psychiatry from the prestigious National Institute of Mental Health and Neurosciences (NIMHANS), Bengaluru. He has additional specialisation in Addiction Psychiatry (DM in Addiction Psychiatry) from the Centre for Addiction Medicine, NIMHANS.</p>
 
                     <p>With over 7 years of clinical experience, Dr. Sudheendra has worked at premier institutions including:</p>
 
-                    <ul class="experience-list">
-                        <li><i class="fas fa-check-circle"></i> Amaha Health</li>
-                        <li><i class="fas fa-check-circle"></i> NIMHANS, Bengaluru</li>
-                        <li><i class="fas fa-check-circle"></i> AIIMS, Delhi</li>
-                        <li><i class="fas fa-check-circle"></i> SDM Medical College, Dharwad</li>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary"></i> Amaha Health</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> NIMHANS, Bengaluru</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> AIIMS, Delhi</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> SDM Medical College, Dharwad</li>
                     </ul>
 
                     <p>His approach focuses on non-judgmental, empathetic listening and comprehensive evaluation to provide personalized treatment plans.</p>
@@ -111,82 +132,94 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services-section py-5 bg-light">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header text-center">
                 <h2>Specialized Services</h2>
                 <p>Comprehensive psychiatric care for various mental health conditions</p>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Depressive Disorders</h3>
+                        <p>Diagnosis and treatment of major depressive disorder and related conditions</p>
                     </div>
-                    <h3>Depressive Disorders</h3>
-                    <p>Diagnosis and treatment of major depressive disorder and related conditions</p>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pills"></i>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Addiction Psychiatry</h3>
+                        <p>Specialized care for substance abuse and behavioral addictions</p>
                     </div>
-                    <h3>Addiction Psychiatry</h3>
-                    <p>Specialized care for substance abuse and behavioral addictions</p>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bed"></i>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Sleep Disorders</h3>
+                        <p>Treatment for insomnia, sleep apnea, and other sleep-related issues</p>
                     </div>
-                    <h3>Sleep Disorders</h3>
-                    <p>Treatment for insomnia, sleep apnea, and other sleep-related issues</p>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-project-diagram"></i>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Bipolar Disorder</h3>
+                        <p>Management of bipolar I and II disorders</p>
                     </div>
-                    <h3>Bipolar Disorder</h3>
-                    <p>Management of bipolar I and II disorders</p>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-head-side-virus"></i>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-head-side-virus"></i>
+                        </div>
+                        <h3>Schizophrenia</h3>
+                        <p>Comprehensive care for schizophrenia spectrum disorders</p>
                     </div>
-                    <h3>Schizophrenia</h3>
-                    <p>Comprehensive care for schizophrenia spectrum disorders</p>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
+                <div class="col-md-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Adult ADHD</h3>
+                        <p>Diagnosis and management of attention deficit hyperactivity disorder</p>
                     </div>
-                    <h3>Adult ADHD</h3>
-                    <p>Diagnosis and management of attention deficit hyperactivity disorder</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Appointment Section -->
-    <section id="appointment" class="appointment-section">
+    <section id="appointment" class="appointment-section py-5">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header text-center">
                 <h2>Book an Appointment</h2>
                 <p>Schedule your consultation with our expert psychiatrist</p>
             </div>
 
-            <div class="card">
+            <div class="card p-4">
                 <div class="appointment-container">
-                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vFZe-rg2lhMgAM53k7L0CLX8A_KroKox8OrTXROkXWy4SAXiIH4a9DvDohmfJuAVHQx-3e--D?gv=true" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vFZe-rg2lhMgAM53k7L0CLX8A_KroKox8OrTXROkXWy4SAXiIH4a9DvDohmfJuAVHQx-3e--D?gv=true" width="100%" height="600" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
-            <div class="appointment-info">
+            <div class="appointment-info mt-4">
                 <h3>Clinic Hours</h3>
-                <ul class="timings-list">
+                <ul class="list-unstyled">
                     <li>
                         <span>Monday - Friday</span>
                         <span>9:00 AM - 5:00 PM</span>
@@ -202,11 +235,11 @@
                 </ul>
             </div>
 
-            <div class="contact-methods">
-                <a href="tel:+918460268091" class="btn primary-btn">
+            <div class="contact-methods mt-4 d-flex justify-content-center">
+                <a href="tel:+918460268091" class="btn btn-primary me-2">
                     <i class="fas fa-phone-alt"></i> Call Now
                 </a>
-                <a href="https://wa.me/918460268091" class="btn secondary-btn whatsapp-btn">
+                <a href="https://wa.me/918460268091" class="btn btn-success">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
             </div>
@@ -214,15 +247,15 @@
     </section>
 
     <!-- Location Section -->
-    <section id="location" class="location-section">
+    <section id="location" class="location-section py-5 bg-light">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header text-center">
                 <h2>Our Location</h2>
                 <p>Visit us at our clinic in Hubli</p>
             </div>
 
-            <div class="location-container">
-                <div class="location-info">
+            <div class="row">
+                <div class="col-md-6">
                     <h3>Clinic Address</h3>
                     <address>
                         <p><i class="fas fa-map-marker-alt"></i> Gandharva Hall, Shop no 17 & 18,</p>
@@ -234,25 +267,28 @@
                     <p><i class="fas fa-phone-alt"></i> +918460268091</p>
                     <p><i class="fas fa-envelope"></i> dr.sudheendra@example.com</p>
 
-                    <a href="https://goo.gl/maps/example" class="btn primary-btn" target="_blank" rel="noopener">
+                    <a href="https://goo.gl/maps/example" class="btn btn-primary" target="_blank" rel="noopener">
                         <i class="fas fa-directions"></i> Get Directions
                     </a>
                 </div>
 
-                <div class="location-map">
+                <div class="col-md-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.321259912045!2d75.13579399999999!3d15.359077999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d78972db965b%3A0xeb6444694aed8c6e!2sSUKHIBHAVA%20HEALTHCARE!5e0!3m2!1sen!2sin!4v1743147100036!5m2!1sen!2sin"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 Dr. Sudheendra Huddar. All Rights Reserved.</p>
-            </div>
+    <footer class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Dr. Sudheendra Huddar. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
-</html> 
+
+</html>
